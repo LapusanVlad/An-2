@@ -1,0 +1,101 @@
+game_id,total_incercari,cuvant_gasit,status,secventa_incercari
+1,12,ICONOGRAFĂ,OK,l k b ț z ă o ș s e y ICONOGRAFĂ
+2,13,FAGOCITUL,OK,p g m v b â ă î n q k u FAGOCITUL
+3,13,APICOLILOR,OK,ș s y v b â h ă m q x e APICOLILOR
+4,8,HIPOPLAZII,OK,i g z y l v k HIPOPLAZII
+5,11,PROHODI,OK,b c g u l v q ș â n PROHODI
+6,11,CIOPLEA,OK,k m v f i o e j x a CIOPLEA
+7,12,COVÂRȘITELOR,OK,d n ș o ă c î u w z k COVÂRȘITELOR
+8,9,PÂRGUIRILE,OK,f h x ă t c d y PÂRGUIRILE
+9,9,BURGHIERILE,OK,q b â d î j c s BURGHIERILE
+10,13,SAMAVOLNICII,OK,h a y â b z n o p j x ș SAMAVOLNICII
+11,10,CĂȘĂIEȘTE,OK,u b ț w o a d ș â CĂȘĂIEȘTE
+12,11,SISALUL,OK,d h ș î k m f n j g SISALUL
+13,11,CINERARIILE,OK,ș j p â x c n o v w CINERARIILE
+14,8,DEZAGLOMERĂM,OK,d f v s z o î DEZAGLOMERĂM
+15,11,TETRODĂ,OK,i s p n g î m a k l TETRODĂ
+16,9,MÂNJITURII,OK,f w î k p n m ș MÂNJITURII
+17,11,DESOFISTICĂRII,OK,k n a i î c t m d l DESOFISTICĂRII
+18,10,TĂIERI,OK,g v p j y d q o w TĂIERI
+19,12,GENTILEȚILOR,OK,w c b ș ț t p q z r ă GENTILEȚILOR
+20,12,NENOROCITUL,OK,x k l t ă f g r a y p NENOROCITUL
+21,9,ÎNAINTĂ,OK,l u p r q w x ă ÎNAINTĂ
+22,12,ISTMICUL,OK,f q â g ș w c r h e t ISTMICUL
+23,9,ASCUȚITUNGHICUL,OK,t ț a n d ș e f ASCUȚITUNGHICUL
+24,13,OBNUBILĂRILOR,OK,x ț j r d i v u s c n p OBNUBILĂRILOR
+25,9,BUMBĂCELULUI,OK,x â p w h m e t BUMBĂCELULUI
+26,10,POSTĂVĂRIILE,OK,p k c b t i l g v POSTĂVĂRIILE
+27,11,CENTROZOMUL,OK,ă h â m k ț t î v p CENTROZOMUL
+28,11,DEBAVURASE,OK,y r w c m a ă h n k DEBAVURASE
+29,11,VRAMIȚE,OK,n j k c s ș b e d m VRAMIȚE
+30,11,RETORI,OK,v c w ă ș h y a m x RETORI
+31,11,EPISTOLARELOR,OK,t y ș s a r b z v q EPISTOLARELOR
+32,12,ÎNCHIABUREAȚI,OK,s v ș y t r u i â w z ÎNCHIABUREAȚI
+33,9,LAMINATOAREA,OK,g k f y x m u c LAMINATOAREA
+34,10,PLATINEZ,OK,o ț n p r y j h ș PLATINEZ
+35,9,ȚĂNDĂRELEI,OK,l v o î n s t b ȚĂNDĂRELEI
+36,9,TEVATURI,OK,â ă q u w j î ș TEVATURI
+37,8,FIDANȚATA,OK,w m e y u ș z FIDANȚATA
+38,10,EXONDĂRILE,OK,z a q x o f p y v EXONDĂRILE
+39,11,DECOMANDATĂ,OK,x w c g r u f h ș ă DECOMANDATĂ
+40,11,OMAGIALI,OK,c w r t â g j d f a OMAGIALI
+41,11,STÂLPISEM,OK,r x g w v m ț l n a STÂLPISEM
+42,9,ELFILOR,OK,d n â c i z a f ELFILOR
+43,9,DECONCERTANTELE,OK,f ș t v n y u s DECONCERTANTELE
+44,10,GAGICULUI,OK,r s e ă w a h m t GAGICULUI
+45,8,APELARĂM,OK,e s u x c î ă APELARĂM
+46,13,SPERMATOFITELOR,OK,i j x î ș v ă ț z b c t SPERMATOFITELOR
+47,11,NECREDINCIOȘILOR,OK,i î v â m y k u t b NECREDINCIOȘILOR
+48,12,CINSTEȚUL,OK,e k n a i l x â q v b CINSTEȚUL
+49,9,NEOFORMAȚIUNII,OK,p d e ț u f x â NEOFORMAȚIUNII
+50,12,PEGMATITUL,OK,x a f z î r v b o m ț PEGMATITUL
+51,11,PLUTUIEȘTE,OK,â x a ș z q l w m v PLUTUIEȘTE
+52,9,CINTEZII,OK,l f ă j g r d v CINTEZII
+53,13,FOLFĂIESC,OK,q g j w x ț î v ă e b d FOLFĂIESC
+54,13,OTORINOLARINGOLOGELOR,OK,k a q ă z ș g e d v n r OTORINOLARINGOLOGELOR
+55,10,ESTETIZANTEI,OK,ș f h m k r x j o ESTETIZANTEI
+56,10,BALAOACHEȘĂ,OK,r u a p l i k x d BALAOACHEȘĂ
+57,11,NOTĂRIȚĂ,OK,w ș q z l n â t g u NOTĂRIȚĂ
+58,11,DULEȚI,OK,q n f h o v t î p i DULEȚI
+59,12,RICKETTSIOZEI,OK,h â f q î t n j l b w RICKETTSIOZEI
+60,11,CIREȘE,OK,w x y q b n z f t ț CIREȘE
+61,10,ZGĂRDAT,OK,w c l p f s y v g ZGĂRDAT
+62,13,PREȚIOASELOR,OK,k f t p n â r b z ă j u PREȚIOASELOR
+63,10,DIMPREJUR,OK,a k î j z â e m n DIMPREJUR
+64,12,BULBUCAT,OK,x u j d ț ș s c ă e r BULBUCAT
+65,11,ARIERDUNĂ,OK,o k e m t b p s â z ARIERDUNĂ
+66,12,FLACIDEI,OK,â r y e v n h k ș d b FLACIDEI
+67,9,CONVENȚIONALI,OK,f u q ă w m a t CONVENȚIONALI
+68,12,CUCONIȚĂ,OK,g l z p e î x n c a i CUCONIȚĂ
+69,8,NELINIȘTITORULUI,OK,s y ă c r j u NELINIȘTITORULUI
+70,10,BIHINDISIRILE,OK,g q z â s k o m c BIHINDISIRILE
+71,12,ÎMPLINIREA,OK,p h y a u î x e c g b ÎMPLINIREA
+72,12,INSTIGÂND,OK,y â w d x l o r j î n INSTIGÂND
+73,10,RECENTE,OK,q g x f w e o k l RECENTE
+74,9,EMBLEMĂ,OK,î ț v u r p g s EMBLEMĂ
+75,10,SINGURAȘUL,OK,ț j e h p î z q k SINGURAȘUL
+76,9,SUBSECRETARULUI,OK,m s j b ș â u n SUBSECRETARULUI
+77,11,DEVITALIZASERĂM,OK,g o x u f y î t i ț DEVITALIZASERĂM
+78,11,SUBAPRECIEZ,OK,â v ă n m p x b î u SUBAPRECIEZ
+79,9,CLASATULUI,OK,k g ț a v â î d CLASATULUI
+80,9,FARAONICUL,OK,j t i c d q ș z FARAONICUL
+81,13,ÎNROLĂRILOR,OK,g p d s â n z f ă i a k ÎNROLĂRILOR
+82,13,PRIMEZIU,OK,w â y î p d ș g k m a n PRIMEZIU
+83,9,CRUCIATULUI,OK,u â w o t z s p CRUCIATULUI
+84,12,PRODIGATELE,OK,t n ă b z q d e y v a PRODIGATELE
+85,10,VINA,OK,i r u t q s b j c VINA
+86,9,CIFRARĂM,OK,m y ș k z q v j CIFRARĂM
+87,9,ÎNFRUNTASEM,OK,d ă c j t y o f ÎNFRUNTASEM
+88,12,VIOȘELI,OK,s î u ț t e r j n v w VIOȘELI
+89,10,AMUȘISERĂȚI,OK,p q x s b j l w d AMUȘISERĂȚI
+90,12,TELEGRAFIARĂ,OK,î v b x s d â m p a ă TELEGRAFIARĂ
+91,11,CITRONADELE,OK,n ș g â ă w u h i r CITRONADELE
+92,10,BASCHETBALIȘTILOR,OK,u a x g w p î ț ș BASCHETBALIȘTILOR
+93,10,SEPTICUL,OK,f î r v â ă n s g SEPTICUL
+94,12,VENENO,OK,p i k b y h d v c â w VENENO
+95,12,GUDRONĂM,OK,j i g u c m e b a q d GUDRONĂM
+96,13,CORDENCIULUI,OK,k o n e b u x d j f ș y CORDENCIULUI
+97,10,STROPȘIRE,OK,d c r z a f v x k STROPȘIRE
+98,12,FOILETONIST,OK,o ț î t m u l p s g h FOILETONIST
+99,13,PLICISERĂ,OK,i p z m d u w j h o ș b PLICISERĂ
+100,8,ACHITAT,OK,o z â v m n ș ACHITAT
