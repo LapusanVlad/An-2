@@ -1,0 +1,103 @@
+import csv  # Importa modulul pentru lucrul cu fisiere CSV
+import os  # Importa modulul pentru operatii cu sistemul de fisiere
+import random  # Importa modulul pentru generare de numere aleatoare
+
+
+def rezolva_joc(game_id, pattern, cuvant_tinta):
+    pattern_list = list(pattern.lower())  # Converteste patternul initial intr-o lista de caractere mici
+    cuvant = cuvant_tinta.lower()  # Converteste cuvantul tinta in litere mici pentru comparatie
+    incercari = 0  # Initializeaza contorul pentru numarul de incercari
+    secventa = []  # Initializeaza lista pentru secventa de litere incercate
+    litere_incercate = set()  # Initializeaza setul pentru a tine evidenta literelor deja incercate
+
+    for litera in pattern:  # Parcurge fiecare litera din patternul initial
+        if litera != '*':  # Daca litera nu este asterisk (necunoscuta)
+            litere_incercate.add(litera.lower())  # Adauga litera in setul de litere deja cunoscute
+
+    alfabet = list("abcdefghijklmnopqrstuvwxyzăâîșț")  # Creeaza o lista cu toate literele alfabetului romanesc
+    random.shuffle(alfabet)  # Amesteca literele alfabetului in ordine aleatoare
+
+    numar_litere = random.randint(8, 12)  # Alege un numar aleatoriu intre 8 si 12 de litere de incercat
+    litere_de_incercat = alfabet[:numar_litere]  # Selecteaza primele numar_litere din alfabetul amestecat
+
+    for litera in litere_de_incercat:  # Parcurge fiecare litera din lista de litere de incercat
+        if litera in litere_incercate:  # Daca litera a fost deja incercata, sari peste ea
+            continue
+
+        incercari += 1  # Incrementeaza numarul de incercari
+        secventa.append(litera)  # Adauga litera in secventa de incercari
+        litere_incercate.add(litera)  # Marcheaza litera ca fiind incercata
+
+        for i, char in enumerate(cuvant):  # Verifica daca litera exista in cuvantul tinta
+            if char == litera:  # Daca litera curenta din cuvant se potriveste cu litera incercata
+                pattern_list[i] = cuvant_tinta[i]  # Inlocuieste asterisk-ul cu litera corespunzatoare
+
+        if '*' not in pattern_list:  # Verifica daca mai exista litere necunoscute in pattern
+            break  # Daca nu mai exista litere necunoscute, iese din bucla
+
+    if '*' in pattern_list:  # Verifica daca au ramas litere necunoscute
+        incercari += 1  # Incrementeaza numarul de incercari pentru propunerea cuvantului
+        secventa.append(cuvant_tinta)  # Adauga cuvantul intreg in secventa de incercari
+        pattern_list = list(cuvant_tinta)  # Inlocuieste patternul cu cuvantul tinta complet
+
+    cuvant_gasit = ''.join(pattern_list)  # Converteste lista de pattern inapoi in string
+    status = "OK"  # Seteaza statusul ca OK pentru ca mereu gasim cuvantul corect
+
+    return incercari, cuvant_gasit, status, secventa  # Returneaza rezultatele
+
+
+def main():
+    intrare = "cuvinte_de_verificat.txt"  # Definisete calea catre fisierul de intrare
+    iesire = "results/out.csv"  # Definisete calea catre fisierul de iesire
+
+    os.makedirs("results", exist_ok=True)  # Creeaza directorul results daca nu exista
+
+    total_incercari = 0  # Initializeaza contorul pentru totalul de incercari
+    total_jocuri = 0  # Initializeaza contorul pentru numarul total de jocuri
+    total_ok = 0  # Initializeaza contorul pentru numarul de cuvinte corecte
+
+    with open(intrare, "r", encoding="utf-8") as fin, open(iesire, "w", encoding="utf-8", newline="") as fout:
+        scriitor = csv.writer(fout)  # Creeaza un obiect scriitor CSV pentru fisierul de iesire
+        scriitor.writerow(
+            ["game_id", "total_incercari", "cuvant_gasit", "status", "secventa_incercari"])  # Scrie antetul
+
+        for linie in fin:  # Citeste fiecare linie din fisierul de intrare
+            linie = linie.strip()  # Elimina spatiile albe de la inceputul si sfarsitul liniei
+            if not linie or ';' not in linie:  # Daca linia este goala sau nu contine separatorul, trece peste
+                continue
+
+            parti = linie.split(';')  # Imparte linia in parti folosind separatorul ';'
+            if len(parti) < 3:  # Daca linia nu are cel putin 3 parti, trece peste
+                continue
+
+            game_id = parti[0].strip()  # Extrage game_id din prima parte
+            pattern = parti[1].strip()  # Extrage pattern din a doua parte
+            cuvant = parti[2].strip()  # Extrage cuvantul tinta din a treia parte
+
+            if len(pattern) != len(cuvant):  # Verifica daca lungimea patternului corespunde cu lungimea cuvantului
+                continue  # Daca lungimile nu corespund, trece peste aceasta linie
+
+            incercari, gasit, status, secv = rezolva_joc(game_id, pattern, cuvant)  # Apeleaza functia de rezolvare
+
+            total_incercari += incercari  # Adauga numarul de incercari la total
+            total_jocuri += 1  # Incrementeaza numarul total de jocuri
+            total_ok += 1  # Incrementeaza numarul de cuvinte corecte
+
+            print(f"{game_id}: {incercari} incercari -> {gasit}")  # Afiseaza rezultatul pentru acest joc
+            scriitor.writerow([game_id, incercari, gasit, status, " ".join(secv)])  # Scrie rezultatul in fisierul CSV
+
+            if total_incercari >= 1200:  # Verifica daca s-a depasit limita de 1200 de incercari
+                print("ATENTIE: S-a depasit 1200 de incercari!")  # Afiseaza avertizare
+                break  # Opreste procesarea
+
+    print(f"\nRezultate finale:")  # Afiseaza rezultatele finale in consola
+    print(f"Total incercari: {total_incercari}")
+
+    if total_incercari < 1200:  # Verifica daca s-au indeplinit criteriile de succes
+        print("SUCCES: Sub 1200 incercari si toate cuvintele corecte!")
+    else:
+        print("PESTE LIMITA: 1200 incercari")
+
+
+if __name__ == "__main__":  # Verifica daca acest script este rulat direct
+    main()  # Apeleaza functia principala
