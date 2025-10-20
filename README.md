@@ -4,6 +4,7 @@ Solver automat pentru jocul Hangman.
 
 ## Cerințe
 - Python 3.6+
+- librarii os, csv si random
 
 ## Cum rulez
 ```bash
