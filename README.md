@@ -3,7 +3,7 @@
 Solver automat pentru jocul Hangman.
 
 ## Cerințe
-- Python 3.6+
+- Python 3.11.0
 - librarii os, csv si random
 
 ## Cum rulez
